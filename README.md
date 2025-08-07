@@ -81,7 +81,7 @@ Visit http://localhost:8000 in your browser.
 - Charts automatically scale to fit all devices.
 
 ## ☎️ Contact Me
-Developer: Emad Akhtari
-📧 Email: [akhtari.em1@gmail.com]
-🔗 GitHub: https://github.com/emadakhtari
+- Developer: Emad Akhtari
+- 📧 Email: [akhtari.em1@gmail.com]
+- 🔗 GitHub: https://github.com/emadakhtari
 
