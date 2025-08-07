@@ -1,0 +1,349 @@
+.layout-builder {
+    position: fixed;
+    width: 400px;
+    background: white;
+    z-index: 1000;
+    left: -400px;
+    top: 0;
+    bottom: 0;
+    box-shadow: -8px 0 10px 3px rgba(0, 0, 0, 0.50);
+    overflow: auto;
+    transition: left .2s;
+}
+
+.layout-builder.show {
+    left: 0;
+}
+
+.layout-builder .layout-builder-toggle.shw i {
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.layout-builder .layout-builder-toggle.hdn {
+    display: none;
+}
+
+.layout-builder.show .layout-builder-toggle.hdn {
+    display: flex;
+}
+
+.layout-builder .layout-builder-toggle {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: black;
+    position: fixed;
+    top: 50%;
+    margin-right: -50px;
+    display: flex;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+}
+
+.layout-builder .layout-builder-body {
+    padding: 30px;
+}
+
+.layout-builder .layout-builder-body .custom-control {
+    margin-bottom: 6px;
+}
+
+.layout-builder .layout-builder-body .custom-control input[type="checkbox"]:checked + label {
+    color: black;
+}
+
+.layout-builder .layout-colors {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+}
+
+.layout-builder .layout-colors .layout-color-item {
+    width: 40px;
+    height: 40px;
+    background: red;
+    margin: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+.layout-builder .layout-colors .layout-color-item.active {
+    box-shadow: 0px 0px 0px 1px black
+}
+
+.layout-builder .layout-colors .layout-color-item span {
+    display: block;
+    height: 45%;
+}
+
+.layout-builder .layout-colors .layout-color-item span:first-child {
+    background: black;
+    transform: rotate(-15deg);
+    width: 110%;
+    height: 70%;
+    margin-top: -5px;
+}
+
+.layout-alert {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    line-height: 1.9;
+}
+
+body.dark .layout-builder {
+    background: #2c2f42;
+}
+
+body.dark .layout-builder .layout-builder-body .custom-control input[type="checkbox"]:checked + label {
+    color: inherit;
+}
+
+body.dark .layout-alert {
+    border-color: #54576a;
+}
+
+@media (max-width: 991px) {
+    .layout-builder .layout-builder-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .layout-builder {
+        display: none;
+    }
+
+    a[data-attr="layout-builder-toggle"] {
+        display: none !important;
+    }
+}
+
+span.required {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    color: red;
+}
+
+.file-upload {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.file-upload__label {
+    display: block;
+    padding: 1em 2em;
+    color: #fff;
+    background: #213397;
+    border-radius: 0.4em;
+    transition: background 0.3s;
+
+}
+
+.file-upload__label:hover {
+    cursor: pointer;
+    background: #0062cc;
+}
+
+.file-upload__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+}
+
+
+#uploaded_image img {
+    width: 170px !important;
+}
+
+
+#image_demo {
+    margin: 0 auto;
+}
+
+.crop_image:hover, .crop_image:active .crop_image:focus {
+    color: white !important;
+    background: #3f51b5 !important;
+}
+
+.display-block {
+    display: block !important;
+}
+
+
+.form_with_date .page-link {
+    cursor: pointer;
+}
+
+.form_with_date .remove_from_date {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.form_with_date .remove_from_date i {
+    color: #34495e;
+    font-size: 23px;
+    display: block;
+    position: relative;
+    top: 13px;
+    cursor: pointer;
+}
+
+.form_with_date .remove_from_date i:hover {
+    color: red;
+}
+
+.form_with_date .remove_to_date {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.form_with_date .remove_to_date i {
+    color: #34495e;
+    font-size: 23px;
+    display: block;
+    position: relative;
+    top: 13px;
+    cursor: pointer;
+}
+
+.form_with_date .remove_to_date i:hover {
+    color: red;
+}
+
+.form_with_date .ti-plus {
+    padding: 5px;
+    border: 0 !important;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form_with_date .ti-plus:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.form_with_date .bg-red {
+    padding: 5px;
+    border: 0 !important;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form_with_date .bg-red:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.form_with_date #inputGroupPrepend {
+    background: green !important;
+}
+
+.form_with_date #inputGroupDelete {
+    background: red !important;
+}
+
+.form_with_date .removeUpdateTotal {
+    background: red !important;
+}
+
+
+#filename_total #file-upload {
+    width: 0;
+}
+
+#filename_total #file-upload label[for="file-upload"] {
+    padding: 0.5em;
+    display: inline-block;
+    background: #bdc3c7;
+    cursor: pointer;
+
+}
+
+#filename_total #file-upload label[for="file-upload"]:hover {
+    background: #bdc3c7;
+}
+
+#filename_total {
+    position: relative;
+    height: 38px;
+}
+
+#filename_total #filename {
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding-right: 130px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 35px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    display: inline-block;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#filename_total .file-upload-label {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: inline-block;
+    padding: 0 .75rem;
+    line-height: 33px;
+    color: #495057;
+    content: "Browse";
+    background-color: #e9ecef;
+    border-right: inherit;
+    border-radius: 0 .25rem .25rem 0;
+    margin: 0;
+}
+#filename_total .file-upload-label:hover {
+    background: #213397;
+    border-color: #213397;
+    color: white;
+    cursor: pointer;
+}
