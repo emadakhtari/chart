@@ -67,7 +67,7 @@ php artisan serve
 
 Visit http://localhost:8000 in your browser.
 
-💡 How It Works
+## 💡 How It Works
 Create a New Chart
 Select a chart type and name (e.g., Currency Chart, Gold Chart).
 Enter your data points.
@@ -80,8 +80,8 @@ Embed them into any platform.
 Responsive Display
 Charts automatically scale to fit all devices.
 
-📞 Contact Me
+## ☎️ Contact Me
 Developer: Emad Akhtari
-📧 Email: akhtari.em1@gmail.com
+📧 Email: [akhtari.em1@gmail.com]
 🔗 GitHub: https://github.com/emadakhtari
 
