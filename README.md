@@ -68,17 +68,17 @@ php artisan serve
 Visit http://localhost:8000 in your browser.
 
 ## 💡 How It Works
-Create a New Chart
-Select a chart type and name (e.g., Currency Chart, Gold Chart).
-Enter your data points.
-Manage Charts
-Edit values anytime.
-Delete or reorganize charts without restrictions.
-Ajax Output
-Copy generated Ajax code snippets.
-Embed them into any platform.
-Responsive Display
-Charts automatically scale to fit all devices.
+- Create a New Chart
+- Select a chart type and name (e.g., Currency Chart, Gold Chart).
+- Enter your data points.
+- Manage Charts
+- Edit values anytime.
+- Delete or reorganize charts without restrictions.
+- Ajax Output
+- Copy generated Ajax code snippets.
+- Embed them into any platform.
+- Responsive Display
+- Charts automatically scale to fit all devices.
 
 ## ☎️ Contact Me
 Developer: Emad Akhtari
